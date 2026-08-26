@@ -1,0 +1,38 @@
+{
+  "name": "genpark-enterprise-semantic-kernel-plugin-connector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Enterprise semantic kernel orchestrator linking native functions, memory stores, and LLM planning filters.",
+  "author": "genpark",
+  "category": "ai-orchestration",
+  "tags": [
+    "semantic-kernel",
+    "plugin-connector",
+    "stepwise-planner",
+    "enterprise-ai",
+    "native-functions"
+  ],
+  "inputs": {
+    "plugin_module_name": {
+      "type": "string"
+    },
+    "native_functions_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "kernel_binding_id": {
+      "type": "string"
+    },
+    "functions_registered": {
+      "type": "integer"
+    },
+    "stepwise_planner_plan_generated": {
+      "type": "boolean"
+    },
+    "openapi_spec_export_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
